@@ -1,0 +1,37 @@
+rules:
+  - id: imdb-title-rating
+    hostSuffixes:
+      - imdb.com
+    pathPrefixes:
+      - /title/
+    fields:
+      - key: imdb_rating
+        selector: "[data-testid='hero-rating-bar__aggregate-rating__score'] span"
+        valueKind: number
+        pattern: "(?<value>\\d+(?:\\.\\d+)?)"
+        role: score
+        multiplier: 10.0
+        clampMin: 0.0
+        clampMax: 100.0
+      - key: movie_category
+        selector: "[data-testid='genres'] a"
+        valueKind: list
+        role: category
+  - id: rottentomatoes-movie-score
+    hostSuffixes:
+      - rottentomatoes.com
+    pathPrefixes:
+      - /m/
+    fields:
+      - key: rottentomatoes_tomatometer
+        selector: "rt-text[slot='criticsScore']"
+        valueKind: number
+        pattern: "(?<value>\\d+(?:\\.\\d+)?)"
+        role: score
+        clampMin: 0.0
+        clampMax: 100.0
+      - key: movie_category
+        selector: "[data-qa='movie-info-item-value']"
+        valueKind: list
+        splitOn: ","
+        role: category

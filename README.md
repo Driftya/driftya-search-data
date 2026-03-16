@@ -40,6 +40,9 @@ This repository contains curation data used by the crawler and indexing policy:
 - `classification/classification-settings.json`: classification thresholds.
 - `classification/scoring.json`: policy scoring weights/thresholds.
 - `classification/languages/<lang>/language-signals.txt`: language inference hints (used when page language is missing).
+- `extraction/rules/index.txt`: grouped rule file manifest.
+- `extraction/rules/*.yaml`: grouped extraction rule files (for example `movie-rules.yaml`).
+- `docs/extraction-rules.md`: extraction rule schema and examples.
 - `docs/inclusion-policy.md`: inclusion/exclusion philosophy.
 - `CONTRIBUTING.md`: how to submit changes.
 - `AGENTS.md`: AI curator workflow and review rules.
@@ -60,6 +63,10 @@ This repository contains curation data used by the crawler and indexing policy:
   - `seed-sites/locales/<lang>/*.txt`
   - `blocklists/locales/<lang>/*.txt`
   - `blocklists/locales/<lang>/custom-patterns/*.txt`
+- Structured extraction rules:
+  - Prefer grouped files in `extraction/rules/*.yaml` and list them in `extraction/rules/index.txt`
+  - Use `role: "score"` to map site-specific ratings to generic `score`
+  - Use `role: "category"` to emit filterable categories
 
 ## Contributing
 

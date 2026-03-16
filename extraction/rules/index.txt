@@ -1,0 +1,2 @@
+# Relative paths from extraction/rules/
+movie-rules.yaml
