@@ -39,6 +39,7 @@ This repository contains curation data used by the crawler and indexing policy:
 - `classification/topics/<topic>.txt`: base patterns for contributor-defined topic labels.
 - `classification/languages/<lang>/topics/<topic>.txt`: locale overlays for topic patterns.
 - `classification/classification-settings.json`: classification thresholds.
+- `classification/label-groups.json`: canonical label groups and aliases emitted during crawl/classification.
 - `classification/scoring.json`: policy scoring weights/thresholds.
 - `classification/languages/<lang>/language-signals.txt`: language inference hints (used when page language is missing).
 - `extraction/rules/index.txt`: grouped rule file manifest.

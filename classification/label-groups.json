@@ -1,0 +1,8 @@
+{
+  "canonicalLabels": {
+    "javascript": ["js", "scripts"],
+    "tracking": ["analytics", "tracking"],
+    "ads": ["ads", "adtech"],
+    "affiliate": ["affiliate"]
+  }
+}
