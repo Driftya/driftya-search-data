@@ -1,0 +1,2 @@
+# swedish manga topic patterns
+manga

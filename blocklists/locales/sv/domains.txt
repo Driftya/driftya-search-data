@@ -1,0 +1,4 @@
+# swedish locale-specific blocked domains
+# one domain per line
+# example:
+# example-seo-farm.se

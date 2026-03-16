@@ -1,0 +1,5 @@
+# ad and adtech detection hints
+adservice
+adsbygoogle
+doubleclick.net
+googlesyndication.com

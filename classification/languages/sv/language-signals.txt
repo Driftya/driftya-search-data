@@ -1,0 +1,6 @@
+# swedish language hints
+ och 
+ att 
+ det 
+ med 
+ inte 

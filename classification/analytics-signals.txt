@@ -1,0 +1,6 @@
+# analytics and tracking vendors/patterns
+google-analytics.com
+googletagmanager.com
+matomo
+plausible.io
+umami

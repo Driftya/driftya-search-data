@@ -1,0 +1,4 @@
+# anime topic patterns
+anime
+otaku
+myanimelist

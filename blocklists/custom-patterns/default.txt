@@ -1,0 +1,5 @@
+# custom negative patterns
+# these are treated as additional SEO/spam penalties
+# one phrase per line
+# example:
+# mass generated content

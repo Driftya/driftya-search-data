@@ -1,0 +1,7 @@
+# affiliate and referral patterns
+aff=
+affiliate
+amzn.to
+ref=
+utm_campaign=
+utm_source=

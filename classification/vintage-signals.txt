@@ -1,0 +1,6 @@
+# older web style/content hints
+archive.org
+geocities
+html 3.2
+neocities
+webmaster

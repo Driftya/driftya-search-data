@@ -1,0 +1,4 @@
+# manga topic patterns
+manga
+manhwa
+scanlation

@@ -1,0 +1,6 @@
+{
+  "blogMinWordCount": 250,
+  "directoryOutboundLinkThreshold": 50,
+  "articleMinWordCount": 150,
+  "smallWebMinWordCount": 180
+}

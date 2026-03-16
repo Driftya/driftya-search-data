@@ -1,0 +1,4 @@
+# swedish locale-specific tool-directory patterns
+# one phrase per line
+# example:
+# skicka in ditt ai-verktyg

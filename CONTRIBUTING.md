@@ -6,12 +6,21 @@ Thank you for helping curate Driftya Search data.
 
 - `seed-sites/*.txt`
   - Add small-web, indie, personal blog, and human-made project seeds.
+  - Locale-specific seeds can be placed in `seed-sites/locales/<lang>/*.txt`.
 - `blocklists/domains.txt`
   - Add domains that are clearly low-quality SEO/tool farms.
 - `blocklists/*.txt` phrase files
   - Add high-confidence patterns for spam or tool-directory SEO content.
+  - Locale-specific overlays can be placed in `blocklists/locales/<lang>/*.txt`.
+  - Extra community patterns can be placed in `blocklists/custom-patterns/*.txt`.
 - `classification/*.txt`
   - Add quality signals for human-writing or SEO detection.
+  - Use localized variants in `classification/languages/<lang>/` (example: `classification/languages/sv/blog-signals.txt`).
+- `classification/topics/*`
+  - Add contributor-defined topic signals (movie, anime, manga, etc.).
+  - Add topic id to `classification/topics/index.txt`.
+  - Add per-topic patterns in `classification/topics/<topic>.txt`.
+  - Optional localized patterns in `classification/languages/<lang>/topics/<topic>.txt`.
 - `docs/*.md`
   - Improve curation policy clarity.
 

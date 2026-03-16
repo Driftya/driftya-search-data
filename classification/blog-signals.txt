@@ -1,0 +1,5 @@
+# common blog/article path and text hints
+/blog
+article
+newsletter
+post

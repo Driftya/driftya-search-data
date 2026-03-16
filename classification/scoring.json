@@ -1,0 +1,13 @@
+{
+  "minHumanWebScore": -2,
+  "positiveSignalScore": 2,
+  "seoSignalPenalty": 2,
+  "seoPatternPenalty": 3,
+  "toolDirectoryPatternPenalty": 5,
+  "spamPhrasePenalty": 8,
+  "longFormMinimumLength": 420,
+  "longFormBoost": 2,
+  "thinContentMaximumLength": 120,
+  "thinContentPenalty": 2,
+  "personalToneBoost": 1
+}

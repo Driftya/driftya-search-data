@@ -1,0 +1,4 @@
+# swedish locale-specific custom negative patterns
+# one phrase per line
+# example:
+# automatisk seo-sida

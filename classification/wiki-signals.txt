@@ -1,0 +1,4 @@
+# wiki hints
+/w/
+index.php?title=
+wiki

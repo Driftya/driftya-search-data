@@ -1,0 +1,6 @@
+# academia/research hints
+arxiv
+doi
+journal
+research
+thesis

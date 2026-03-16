@@ -1,0 +1,4 @@
+# swedish locale-specific seo patterns
+# one phrase per line
+# example:
+# basta verktygen for

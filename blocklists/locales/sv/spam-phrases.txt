@@ -1,0 +1,4 @@
+# swedish locale-specific spam phrases
+# one phrase per line
+# example:
+# tjana pengar snabbt
