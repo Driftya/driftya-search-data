@@ -1,0 +1,3 @@
+# Known SEO/tool farm domains (examples; keep curated and explicit).
+example-seo-farm.com
+*.tool-directory.example
