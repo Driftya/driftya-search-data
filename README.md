@@ -24,6 +24,8 @@ This repository contains curation data used by the crawler and indexing policy:
 - `blocklists/custom-patterns/*.txt`: user-contributed extra negative patterns.
 - `blocklists/locales/<lang>/custom-patterns/*.txt`: locale-specific custom negative patterns.
 - `classification/human-writing-signals.txt`: positive human-web signals.
+- `classification/personal-tone-signals.txt`: positive personal/conversational writing hints.
+- `classification/synthetic-style-signals.txt`: combination signals for generic synthetic writing style risk.
 - `classification/seo-signals.txt`: negative SEO signals.
 - `classification/ad-signals.txt`: ad/adtech detection hints.
 - `classification/analytics-signals.txt`: analytics/tracking detection hints.
@@ -41,7 +43,10 @@ This repository contains curation data used by the crawler and indexing policy:
 - `classification/classification-settings.json`: classification thresholds.
 - `classification/label-groups.json`: canonical label groups and aliases emitted during crawl/classification.
 - `classification/scoring.json`: policy scoring weights/thresholds.
+- `classification/synthetic-style-settings.json`: length-aware thresholds for synthetic-style combination penalties.
 - `classification/languages/<lang>/language-signals.txt`: language inference hints (used when page language is missing).
+- `classification/languages/<lang>/personal-tone-signals.txt`: locale-specific first-person and conversational writing hints.
+- `classification/languages/<lang>/synthetic-style-signals.txt`: locale-specific synthetic-style writing hints.
 - `extraction/rules/index.txt`: grouped rule file manifest.
 - `extraction/rules/*.yaml`: grouped extraction rule files (for example `movie-rules.yaml`).
 - `docs/extraction-rules.md`: extraction rule schema and examples.

@@ -1,0 +1,14 @@
+# english personal tone markers
+ i 
+ my 
+ we 
+ our 
+ i'm
+ i've
+i think
+in my experience
+to me
+personally
+not sure
+oops
+sorry

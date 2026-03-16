@@ -1,0 +1,15 @@
+# swedish personal tone markers
+ jag 
+ mig 
+ min 
+ mitt 
+ mina 
+ vi 
+ var 
+ våra 
+ tycker jag
+ jag tror
+ jag vet inte
+kanske
+oops
+förlåt

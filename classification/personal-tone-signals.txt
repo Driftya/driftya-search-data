@@ -1,0 +1,13 @@
+# Base human/personal tone markers.
+# Keep these broad but still clearly correlated with personal writing.
+i think
+i guess
+honestly
+to be honest
+not sure
+maybe
+perhaps
+oops
+sorry
+update:
+edited to add

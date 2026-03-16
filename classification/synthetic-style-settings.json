@@ -1,0 +1,9 @@
+{
+  "shortTextWordThreshold": 250,
+  "mediumTextWordThreshold": 800,
+  "shortTextMinMatches": 3,
+  "mediumTextMinMatches": 5,
+  "longTextMinMatches": 8,
+  "penaltyPerExcessMatch": 1,
+  "maxPenalty": 8
+}
