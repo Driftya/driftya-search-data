@@ -1,0 +1,11 @@
+# High-confidence adult content terms (keep specific to reduce false positives)
+porn
+pornhub
+xvideos
+xnxx
+redtube
+youporn
+hentai porn
+sex cam
+camgirl
+adult video

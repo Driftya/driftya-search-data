@@ -9,6 +9,7 @@ Pages primarily created for SEO traffic, affiliate marketing, tool directories, 
 - Hard filters:
   - domain blocklist
   - high-confidence spam phrases
+  - high-confidence adult-content phrases
 - Scoring filters:
   - negative signals for SEO/tool-directory patterns
   - positive signals for personal/human-writing indicators

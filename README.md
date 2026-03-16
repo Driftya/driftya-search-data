@@ -17,6 +17,7 @@ This repository contains curation data used by the crawler and indexing policy:
 - `seed-sites/locales/<lang>/`: locale-specific seed URL/domain lists.
 - `blocklists/domains.txt`: domains to hard-block from indexing.
 - `blocklists/spam-phrases.txt`: high-confidence spam phrase rules.
+- `blocklists/adult-content-patterns.txt`: high-confidence adult-content phrases (hard exclusion).
 - `blocklists/tool-directory-patterns.txt`: phrases correlated with AI/tool directory SEO farms.
 - `blocklists/seo-patterns.txt`: generic SEO-farm phrase patterns.
 - `blocklists/locales/<lang>/`: locale-specific overlays for domain and phrase blocklists.
