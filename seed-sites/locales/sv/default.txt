@@ -1,4 +1,4 @@
 # swedish local seed examples
 # add one domain/url per line
 # example:
-# https://example.se
+# https://sweclockers.com
