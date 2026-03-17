@@ -1,2 +1,3 @@
 # Relative paths from extraction/rules/
+anime-rules.yaml
 movie-rules.yaml

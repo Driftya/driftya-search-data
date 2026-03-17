@@ -34,11 +34,11 @@
       "maxPages": 2000,
       "rankingPenalty": 14,
       "allowedPathPrefixes": [
+        "/chart/",
         "/title/",
         "/name/"
       ],
       "blockedPathPrefixes": [
-        "/chart/",
         "/list/",
         "/news/",
         "/search/",
@@ -48,6 +48,43 @@
         "page",
         "ref_",
         "start"
+      ]
+    },
+    {
+      "hostSuffix": "rottentomatoes.com",
+      "maxPages": 1500,
+      "rankingPenalty": 14,
+      "allowedPathPrefixes": [
+        "/browse/",
+        "/m/",
+        "/tv/"
+      ],
+      "blockedPathPrefixes": [
+        "/celebrity/",
+        "/critics/",
+        "/guides/",
+        "/user/"
+      ],
+      "blockedQueryKeys": [
+        "page"
+      ]
+    },
+    {
+      "hostSuffix": "anidb.net",
+      "maxPages": 2000,
+      "rankingPenalty": 14,
+      "allowedPathPrefixes": [
+        "/anime/"
+      ],
+      "blockedPathPrefixes": [
+        "/forum/",
+        "/group/",
+        "/tag/",
+        "/user/"
+      ],
+      "blockedQueryKeys": [
+        "page",
+        "show"
       ]
     },
     {

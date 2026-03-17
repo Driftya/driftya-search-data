@@ -1,0 +1,30 @@
+rules:
+  - id: anidb-anime-rating
+    hostSuffixes:
+      - anidb.net
+    pathPrefixes:
+      - /anime/
+    fields:
+      - key: anidb_rating
+        selector: body
+        valueKind: number
+        pattern: "Rating\\s+(?<value>\\d+(?:\\.\\d+)?)\\s*\\("
+        role: score
+        multiplier: 10.0
+        clampMin: 0.0
+        clampMax: 100.0
+  - id: myanimelist-anime-rating
+    hostSuffixes:
+      - myanimelist.net
+    pathPrefixes:
+      - /anime/
+      - /manga/
+    fields:
+      - key: myanimelist_rating
+        selector: "span[itemprop='ratingValue']"
+        valueKind: number
+        pattern: "(?<value>\\d+(?:\\.\\d+)?)"
+        role: score
+        multiplier: 10.0
+        clampMin: 0.0
+        clampMax: 100.0

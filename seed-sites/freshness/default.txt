@@ -4,6 +4,9 @@
 https://driftya.com/
 https://driftya.com/blog
 https://search.driftya.com/
+https://www.imdb.com/chart/moviemeter/
+https://www.rottentomatoes.com/browse/movies_in_theaters/
+https://anidb.net/anime/
 https://myanimelist.net/anime/season
 https://en.wikipedia.org/wiki/Portal:Current_events
 https://www.reddit.com/r/programming/new/
