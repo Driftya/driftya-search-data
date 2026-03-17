@@ -38,6 +38,10 @@
         "/title/",
         "/name/"
       ],
+      "canonicalPathTemplates": [
+        "/title/{id}",
+        "/name/{id}"
+      ],
       "blockedPathPrefixes": [
         "/list/",
         "/news/",
@@ -59,6 +63,10 @@
         "/m/",
         "/tv/"
       ],
+      "canonicalPathTemplates": [
+        "/m/{slug}",
+        "/tv/{slug}"
+      ],
       "blockedPathPrefixes": [
         "/celebrity/",
         "/critics/",
@@ -75,6 +83,9 @@
       "rankingPenalty": 14,
       "allowedPathPrefixes": [
         "/anime/"
+      ],
+      "canonicalPathTemplates": [
+        "/anime/{id}"
       ],
       "blockedPathPrefixes": [
         "/forum/",
@@ -94,6 +105,10 @@
       "allowedPathPrefixes": [
         "/anime/",
         "/manga/"
+      ],
+      "canonicalPathTemplates": [
+        "/anime/{id}/{slug}",
+        "/manga/{id}/{slug}"
       ],
       "blockedPathPrefixes": [
         "/blog.php",

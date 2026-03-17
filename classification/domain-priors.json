@@ -6,14 +6,79 @@
       "weight": 12
     },
     {
+      "hostSuffix": "wikipedia.org",
+      "searchSet": "SMALLWEB",
+      "weight": -12
+    },
+    {
       "hostSuffix": "reddit.com",
       "searchSet": "FORUMS",
       "weight": 10
     },
     {
+      "hostSuffix": "reddit.com",
+      "searchSet": "SMALLWEB",
+      "weight": -12
+    },
+    {
+      "hostSuffix": "reddit.com",
+      "searchSet": "ACADEMIA",
+      "weight": -8
+    },
+    {
       "hostSuffix": "stackexchange.com",
       "searchSet": "FORUMS",
       "weight": 8
+    },
+    {
+      "hostSuffix": "stackexchange.com",
+      "searchSet": "SMALLWEB",
+      "weight": -10
+    },
+    {
+      "hostSuffix": "stackexchange.com",
+      "searchSet": "ACADEMIA",
+      "weight": -6
+    },
+    {
+      "hostSuffix": "imdb.com",
+      "searchSet": "SMALLWEB",
+      "weight": -12
+    },
+    {
+      "hostSuffix": "imdb.com",
+      "searchSet": "ACADEMIA",
+      "weight": -8
+    },
+    {
+      "hostSuffix": "rottentomatoes.com",
+      "searchSet": "SMALLWEB",
+      "weight": -12
+    },
+    {
+      "hostSuffix": "rottentomatoes.com",
+      "searchSet": "ACADEMIA",
+      "weight": -8
+    },
+    {
+      "hostSuffix": "myanimelist.net",
+      "searchSet": "SMALLWEB",
+      "weight": -14
+    },
+    {
+      "hostSuffix": "myanimelist.net",
+      "searchSet": "ACADEMIA",
+      "weight": -10
+    },
+    {
+      "hostSuffix": "anidb.net",
+      "searchSet": "SMALLWEB",
+      "weight": -12
+    },
+    {
+      "hostSuffix": "anidb.net",
+      "searchSet": "ACADEMIA",
+      "weight": -8
     }
   ],
   "topicPriors": [

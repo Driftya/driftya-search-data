@@ -21,7 +21,7 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
 - `seed-sites/locales/<lang>/`: locale-specific seed URL/domain lists.
 - `seed-sites/freshness/`: recurring freshness seeds used to refresh timely entry points.
 - `seed-sites/freshness/locales/<lang>/`: locale-specific freshness seed overlays.
-- `crawler/domain-crawl-policies.json`: default and per-domain crawl page caps, ranking penalties, and path/query restrictions.
+- `crawler/domain-crawl-policies.json`: default and per-domain crawl page caps, ranking penalties, path/query restrictions, and canonical route templates.
 - `blocklists/domains.txt`: domains to hard-block from indexing.
 - `blocklists/spam-phrases.txt`: high-confidence spam phrase rules.
 - `blocklists/adult-content-patterns.txt`: high-confidence adult-content phrases (hard exclusion).
@@ -86,7 +86,8 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
   - Use `role: "score"` to map site-specific ratings to generic `score`
   - Use `role: "category"` to emit filterable categories
 - Crawl policy:
-  - `crawler/domain-crawl-policies.json` defines the default host page cap, ranking penalty, per-domain overrides, path allowlists, path blocklists, and blocked query keys
+  - `crawler/domain-crawl-policies.json` defines the default host page cap, ranking penalty, per-domain overrides, path allowlists, path blocklists, blocked query keys, and canonical route templates for entity pages
+  - canonical route templates let discovery/listing pages be crawled as feeders while excluding non-canonical utility pages from indexing
   - The engine uses this together with host rotation so capped domains stay bounded over time
 - Classification policy:
   - `classification/domain-priors.json` lets trusted domains strongly bias structural classifications such as `WIKIS` or `FORUMS`
