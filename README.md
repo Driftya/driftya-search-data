@@ -15,6 +15,7 @@ This repository contains curation data used by the crawler and indexing policy:
 
 - `seed-sites/`: seed URL/domain lists used to bootstrap crawler discovery.
 - `seed-sites/locales/<lang>/`: locale-specific seed URL/domain lists.
+- `crawler/domain-crawl-policies.json`: default and per-domain crawl page caps.
 - `blocklists/domains.txt`: domains to hard-block from indexing.
 - `blocklists/spam-phrases.txt`: high-confidence spam phrase rules.
 - `blocklists/adult-content-patterns.txt`: high-confidence adult-content phrases (hard exclusion).

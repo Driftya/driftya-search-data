@@ -1,0 +1,9 @@
+{
+  "defaultMaxPages": 500,
+  "domains": [
+    {
+      "hostSuffix": "driftya.com",
+      "maxPages": 5000
+    }
+  ]
+}
