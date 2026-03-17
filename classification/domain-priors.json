@@ -1,0 +1,46 @@
+{
+  "searchSetPriors": [
+    {
+      "hostSuffix": "wikipedia.org",
+      "searchSet": "WIKIS",
+      "weight": 12
+    },
+    {
+      "hostSuffix": "reddit.com",
+      "searchSet": "FORUMS",
+      "weight": 10
+    },
+    {
+      "hostSuffix": "stackexchange.com",
+      "searchSet": "FORUMS",
+      "weight": 8
+    }
+  ],
+  "topicPriors": [
+    {
+      "hostSuffix": "imdb.com",
+      "topic": "movie",
+      "weight": 6
+    },
+    {
+      "hostSuffix": "rottentomatoes.com",
+      "topic": "movie",
+      "weight": 6
+    },
+    {
+      "hostSuffix": "myanimelist.net",
+      "topic": "anime",
+      "weight": 6
+    },
+    {
+      "hostSuffix": "myanimelist.net",
+      "topic": "manga",
+      "weight": 4
+    },
+    {
+      "hostSuffix": "anidb.net",
+      "topic": "anime",
+      "weight": 6
+    }
+  ]
+}

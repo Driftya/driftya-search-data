@@ -1,0 +1,20 @@
+{
+  "default": {
+    "minimumScore": 3,
+    "minimumDistinctSignals": 2
+  },
+  "topics": {
+    "movie": {
+      "minimumScore": 4,
+      "minimumDistinctSignals": 2
+    },
+    "anime": {
+      "minimumScore": 4,
+      "minimumDistinctSignals": 2
+    },
+    "manga": {
+      "minimumScore": 4,
+      "minimumDistinctSignals": 2
+    }
+  }
+}

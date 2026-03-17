@@ -1,0 +1,34 @@
+{
+  "adjustments": [
+    {
+      "whenSearchSet": "WIKIS",
+      "targetSearchSet": "ACADEMIA",
+      "weight": -6
+    },
+    {
+      "whenSearchSet": "WIKIS",
+      "targetSearchSet": "BLOGS",
+      "weight": -8
+    },
+    {
+      "whenSearchSet": "WIKIS",
+      "targetContentType": "blog",
+      "weight": -8
+    },
+    {
+      "whenSearchSet": "FORUMS",
+      "targetSearchSet": "BLOGS",
+      "weight": -6
+    },
+    {
+      "whenSearchSet": "FORUMS",
+      "targetContentType": "blog",
+      "weight": -6
+    },
+    {
+      "whenSearchSet": "ACADEMIA",
+      "targetSearchSet": "BLOGS",
+      "weight": -4
+    }
+  ]
+}

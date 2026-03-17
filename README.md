@@ -48,6 +48,9 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
 - `classification/topics/<topic>.txt`: base patterns for contributor-defined topic labels.
 - `classification/languages/<lang>/topics/<topic>.txt`: locale overlays for topic patterns.
 - `classification/classification-settings.json`: classification thresholds.
+- `classification/domain-priors.json`: domain-level classifier priors for search sets and topics.
+- `classification/negative-signals.json`: negative classifier adjustments that suppress weak competing classifications.
+- `classification/topic-thresholds.json`: minimum score and distinct-evidence requirements for topic labels.
 - `classification/label-groups.json`: canonical label groups and aliases emitted during crawl/classification.
 - `classification/scoring.json`: policy scoring weights/thresholds.
 - `classification/synthetic-style-settings.json`: length-aware thresholds for synthetic-style combination penalties.
@@ -85,6 +88,10 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
 - Crawl policy:
   - `crawler/domain-crawl-policies.json` defines the default host page cap, ranking penalty, per-domain overrides, path allowlists, path blocklists, and blocked query keys
   - The engine uses this together with host rotation so capped domains stay bounded over time
+- Classification policy:
+  - `classification/domain-priors.json` lets trusted domains strongly bias structural classifications such as `WIKIS` or `FORUMS`
+  - `classification/negative-signals.json` lets one strong classification demote weaker competing ones such as `WIKIS -> blog`
+  - `classification/topic-thresholds.json` prevents topic labels from being emitted on one weak token alone
 
 ## Contributing
 
