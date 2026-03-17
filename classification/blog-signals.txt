@@ -1,5 +1,4 @@
 # common blog/article path and text hints
 /blog
-article
+/posts/
 newsletter
-post

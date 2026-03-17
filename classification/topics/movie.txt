@@ -1,4 +1,12 @@
 # movie topic patterns
-movie
-film
-cinema
+box office
+cast
+director
+feature film
+imdb
+motion picture
+release date
+rotten tomatoes
+runtime
+screenplay
+starring
