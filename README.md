@@ -11,6 +11,10 @@ This repository contains curation data used by the crawler and indexing policy:
 - spam, tool-directory, and SEO phrase patterns
 - quality scoring signals
 
+This data package is the policy layer behind Driftya Search. It shapes discovery, scoring, classification, extraction, and bounded crawl behavior.
+
+See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of what this repository enables in the engine.
+
 ## Layout
 
 - `seed-sites/`: seed URL/domain lists used to bootstrap crawler discovery.
@@ -51,6 +55,7 @@ This repository contains curation data used by the crawler and indexing policy:
 - `extraction/rules/index.txt`: grouped rule file manifest.
 - `extraction/rules/*.yaml`: grouped extraction rule files (for example `movie-rules.yaml`).
 - `docs/extraction-rules.md`: extraction rule schema and examples.
+- `docs/capabilities.md`: summary of search-engine capabilities enabled by this data package.
 - `docs/inclusion-policy.md`: inclusion/exclusion philosophy.
 - `CONTRIBUTING.md`: how to submit changes.
 - `AGENTS.md`: AI curator workflow and review rules.
@@ -75,6 +80,9 @@ This repository contains curation data used by the crawler and indexing policy:
   - Prefer grouped files in `extraction/rules/*.yaml` and list them in `extraction/rules/index.txt`
   - Use `role: "score"` to map site-specific ratings to generic `score`
   - Use `role: "category"` to emit filterable categories
+- Crawl policy:
+  - `crawler/domain-crawl-policies.json` defines the default host page cap and per-domain overrides
+  - The engine uses this together with host rotation so capped domains stay bounded over time
 
 ## Contributing
 
