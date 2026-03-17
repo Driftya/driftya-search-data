@@ -21,8 +21,9 @@ rules:
       - /manga/
     fields:
       - key: myanimelist_rating
-        selector: "span[itemprop='ratingValue']"
+        selector: ".score-label, .score, span[itemprop='ratingValue']"
         valueKind: number
+        valueSource: text
         pattern: "(?<value>\\d+(?:\\.\\d+)?)"
         role: score
         multiplier: 10.0
