@@ -1,9 +1,96 @@
 {
   "defaultMaxPages": 500,
+  "defaultRankingPenalty": 0,
   "domains": [
     {
       "hostSuffix": "driftya.com",
-      "maxPages": 5000
+      "maxPages": 5000,
+      "rankingPenalty": 0
+    },
+    {
+      "hostSuffix": "wikipedia.org",
+      "maxPages": 2000,
+      "rankingPenalty": 8,
+      "allowedPathPrefixes": [
+        "/wiki/"
+      ],
+      "blockedPathPrefixes": [
+        "/w/",
+        "/wiki/Special:",
+        "/wiki/Talk:",
+        "/wiki/User:",
+        "/wiki/User_talk:",
+        "/wiki/Template_talk:",
+        "/wiki/File:"
+      ],
+      "blockedQueryKeys": [
+        "action",
+        "diff",
+        "oldid"
+      ]
+    },
+    {
+      "hostSuffix": "imdb.com",
+      "maxPages": 2000,
+      "rankingPenalty": 14,
+      "allowedPathPrefixes": [
+        "/title/",
+        "/name/"
+      ],
+      "blockedPathPrefixes": [
+        "/chart/",
+        "/list/",
+        "/news/",
+        "/search/",
+        "/user/"
+      ],
+      "blockedQueryKeys": [
+        "page",
+        "ref_",
+        "start"
+      ]
+    },
+    {
+      "hostSuffix": "myanimelist.net",
+      "maxPages": 3000,
+      "rankingPenalty": 16,
+      "allowedPathPrefixes": [
+        "/anime/",
+        "/manga/"
+      ],
+      "blockedPathPrefixes": [
+        "/blog.php",
+        "/comments.php",
+        "/forum/",
+        "/profile/",
+        "/reviews.php",
+        "/userlist/"
+      ],
+      "blockedQueryKeys": [
+        "offset",
+        "page",
+        "show"
+      ]
+    },
+    {
+      "hostSuffix": "reddit.com",
+      "maxPages": 500,
+      "rankingPenalty": 24,
+      "allowedPathPrefixes": [
+        "/r/"
+      ],
+      "blockedPathPrefixes": [
+        "/gallery/",
+        "/search",
+        "/user/",
+        "/u/"
+      ],
+      "blockedQueryKeys": [
+        "after",
+        "before",
+        "count",
+        "sort"
+      ]
     }
   ]
 }

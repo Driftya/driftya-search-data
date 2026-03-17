@@ -22,6 +22,19 @@ The data package helps the engine find and keep:
 
 Instead of treating every site the same, the engine can lean toward pages that feel intentional and human-made.
 
+### Freshness Entry Points
+
+The data package can define recurring freshness seeds separately from bootstrap seeds.
+
+This lets the engine revisit:
+
+- current-season pages
+- current-events portals
+- active subreddit listing pages
+- high-value home or blog entry pages
+
+without pretending every domain should be crawled the same way.
+
 ### Human-Web Scoring
 
 The engine can score pages using:
@@ -85,6 +98,10 @@ The data package can define crawl limits per domain, including:
 
 - default page budgets
 - host-specific overrides
+- ranking penalties for large platforms
+- allowed path prefixes
+- blocked path prefixes
+- blocked query keys
 
 That gives the search engine a bounded model for large sites and prevents unbounded crawl growth.
 
@@ -110,6 +127,8 @@ With this repository, Driftya Search can already support:
 - structured extraction
 - seed-driven discovery
 - bounded large-site crawl caps
+- ranking demotion for large platforms
+- path and query restrictions for large or noisy domains
 - host-level document rotation once a cap is reached
 
 That combination makes the engine more than a crawler plus a text index. It becomes a curated search layer with explicit policy.
@@ -131,10 +150,7 @@ That is the core capability this repository provides.
 
 The best future extensions for this data package are:
 
-- path allowlists for large domains
-- blocked pagination and query-key rules
 - domain-type profiles such as `small`, `medium`, `large`
-- ranking penalties for very large platforms
 - freshness-oriented recrawl profiles
 - richer topic packs and locale coverage
 

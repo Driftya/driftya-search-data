@@ -1,0 +1,10 @@
+# Freshness seed list for recurring crawl refresh.
+# These should be stable entry points that surface newly updated or newly published pages.
+
+https://driftya.com/
+https://driftya.com/blog
+https://search.driftya.com/
+https://myanimelist.net/anime/season
+https://en.wikipedia.org/wiki/Portal:Current_events
+https://www.reddit.com/r/programming/new/
+https://www.reddit.com/r/anime/new/

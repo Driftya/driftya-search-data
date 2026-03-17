@@ -19,7 +19,9 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
 
 - `seed-sites/`: seed URL/domain lists used to bootstrap crawler discovery.
 - `seed-sites/locales/<lang>/`: locale-specific seed URL/domain lists.
-- `crawler/domain-crawl-policies.json`: default and per-domain crawl page caps.
+- `seed-sites/freshness/`: recurring freshness seeds used to refresh timely entry points.
+- `seed-sites/freshness/locales/<lang>/`: locale-specific freshness seed overlays.
+- `crawler/domain-crawl-policies.json`: default and per-domain crawl page caps, ranking penalties, and path/query restrictions.
 - `blocklists/domains.txt`: domains to hard-block from indexing.
 - `blocklists/spam-phrases.txt`: high-confidence spam phrase rules.
 - `blocklists/adult-content-patterns.txt`: high-confidence adult-content phrases (hard exclusion).
@@ -81,7 +83,7 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
   - Use `role: "score"` to map site-specific ratings to generic `score`
   - Use `role: "category"` to emit filterable categories
 - Crawl policy:
-  - `crawler/domain-crawl-policies.json` defines the default host page cap and per-domain overrides
+  - `crawler/domain-crawl-policies.json` defines the default host page cap, ranking penalty, per-domain overrides, path allowlists, path blocklists, and blocked query keys
   - The engine uses this together with host rotation so capped domains stay bounded over time
 
 ## Contributing
