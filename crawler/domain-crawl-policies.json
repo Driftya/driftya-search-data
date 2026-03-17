@@ -1,16 +1,38 @@
 {
   "defaultMaxPages": 500,
   "defaultRankingPenalty": 0,
+  "defaultMinDelayMs": 3000,
+  "defaultMaxJitterMs": 1500,
+  "defaultMaxConcurrentRequests": 1,
+  "defaultHonorRobotsCrawlDelay": true,
+  "defaultStatusCooldowns": [
+    {
+      "statusCode": 403,
+      "cooldownMinutes": 720
+    },
+    {
+      "statusCode": 429,
+      "cooldownMinutes": 240
+    }
+  ],
   "domains": [
     {
       "hostSuffix": "driftya.com",
       "maxPages": 5000,
-      "rankingPenalty": 0
+      "rankingPenalty": 0,
+      "minDelayMs": 1000,
+      "maxJitterMs": 500,
+      "maxConcurrentRequests": 2,
+      "honorRobotsCrawlDelay": true
     },
     {
       "hostSuffix": "wikipedia.org",
       "maxPages": 2000,
       "rankingPenalty": 8,
+      "minDelayMs": 4000,
+      "maxJitterMs": 1000,
+      "maxConcurrentRequests": 1,
+      "honorRobotsCrawlDelay": true,
       "allowedPathPrefixes": [
         "/wiki/"
       ],
@@ -33,6 +55,20 @@
       "hostSuffix": "imdb.com",
       "maxPages": 2000,
       "rankingPenalty": 14,
+      "minDelayMs": 7000,
+      "maxJitterMs": 2000,
+      "maxConcurrentRequests": 1,
+      "honorRobotsCrawlDelay": true,
+      "statusCooldowns": [
+        {
+          "statusCode": 403,
+          "cooldownMinutes": 1440
+        },
+        {
+          "statusCode": 429,
+          "cooldownMinutes": 360
+        }
+      ],
       "allowedPathPrefixes": [
         "/chart/",
         "/title/",
@@ -58,6 +94,20 @@
       "hostSuffix": "rottentomatoes.com",
       "maxPages": 1500,
       "rankingPenalty": 14,
+      "minDelayMs": 7000,
+      "maxJitterMs": 2000,
+      "maxConcurrentRequests": 1,
+      "honorRobotsCrawlDelay": true,
+      "statusCooldowns": [
+        {
+          "statusCode": 403,
+          "cooldownMinutes": 1440
+        },
+        {
+          "statusCode": 429,
+          "cooldownMinutes": 360
+        }
+      ],
       "allowedPathPrefixes": [
         "/browse/",
         "/m/",
@@ -81,6 +131,20 @@
       "hostSuffix": "anidb.net",
       "maxPages": 2000,
       "rankingPenalty": 14,
+      "minDelayMs": 6000,
+      "maxJitterMs": 1500,
+      "maxConcurrentRequests": 1,
+      "honorRobotsCrawlDelay": true,
+      "statusCooldowns": [
+        {
+          "statusCode": 403,
+          "cooldownMinutes": 1440
+        },
+        {
+          "statusCode": 429,
+          "cooldownMinutes": 360
+        }
+      ],
       "allowedPathPrefixes": [
         "/anime/"
       ],
@@ -102,6 +166,20 @@
       "hostSuffix": "myanimelist.net",
       "maxPages": 3000,
       "rankingPenalty": 16,
+      "minDelayMs": 8000,
+      "maxJitterMs": 2500,
+      "maxConcurrentRequests": 1,
+      "honorRobotsCrawlDelay": true,
+      "statusCooldowns": [
+        {
+          "statusCode": 403,
+          "cooldownMinutes": 1440
+        },
+        {
+          "statusCode": 429,
+          "cooldownMinutes": 360
+        }
+      ],
       "allowedPathPrefixes": [
         "/anime/",
         "/manga/"
@@ -128,6 +206,20 @@
       "hostSuffix": "reddit.com",
       "maxPages": 500,
       "rankingPenalty": 24,
+      "minDelayMs": 5000,
+      "maxJitterMs": 1500,
+      "maxConcurrentRequests": 1,
+      "honorRobotsCrawlDelay": true,
+      "statusCooldowns": [
+        {
+          "statusCode": 403,
+          "cooldownMinutes": 1440
+        },
+        {
+          "statusCode": 429,
+          "cooldownMinutes": 360
+        }
+      ],
       "allowedPathPrefixes": [
         "/r/"
       ],

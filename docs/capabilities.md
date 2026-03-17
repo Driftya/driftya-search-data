@@ -129,6 +129,7 @@ With this repository, Driftya Search can already support:
 - bounded large-site crawl caps
 - ranking demotion for large platforms
 - path and query restrictions for large or noisy domains
+- host-aware politeness controls with delay, jitter, concurrency limits, robots crawl-delay support, and status-code cooldowns
 - host-level document rotation once a cap is reached
 
 That combination makes the engine more than a crawler plus a text index. It becomes a curated search layer with explicit policy.
