@@ -2,12 +2,5 @@
 # These should be stable entry points that surface newly updated or newly published pages.
 
 https://driftya.com/
-https://driftya.com/blog
+https://driftya.com/content
 https://search.driftya.com/
-https://www.imdb.com/chart/moviemeter/
-https://www.rottentomatoes.com/browse/movies_in_theaters/
-https://anidb.net/anime/
-https://myanimelist.net/anime/season
-https://en.wikipedia.org/wiki/Portal:Current_events
-https://www.reddit.com/r/programming/new/
-https://www.reddit.com/r/anime/new/

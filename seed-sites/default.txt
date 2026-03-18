@@ -1,5 +1,2 @@
 # Seed list for crawler bootstrap (one URL/domain per line).
-https://indieweb.org/
-https://bearblog.dev/
-https://smallblog.club/
 https://driftya.com/
