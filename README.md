@@ -48,7 +48,7 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
 - `classification/topics/<topic>.txt`: base patterns for contributor-defined topic labels.
 - `classification/languages/<lang>/topics/<topic>.txt`: locale overlays for topic patterns.
 - `classification/classification-settings.json`: classification thresholds.
-- `classification/domain-priors.json`: domain-level classifier priors for search sets and topics.
+- `classification/domain-priors.json`: domain-level classifier priors for labels and topics.
 - `classification/negative-signals.json`: negative classifier adjustments that suppress weak competing classifications.
 - `classification/topic-thresholds.json`: minimum score and distinct-evidence requirements for topic labels.
 - `classification/label-groups.json`: canonical label groups and aliases emitted during crawl/classification.

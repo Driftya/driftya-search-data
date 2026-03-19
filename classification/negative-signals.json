@@ -1,33 +1,23 @@
 {
   "adjustments": [
     {
-      "whenSearchSet": "WIKIS",
-      "targetSearchSet": "ACADEMIA",
+      "whenLabel": "wiki",
+      "targetLabel": "academia",
       "weight": -6
     },
     {
-      "whenSearchSet": "WIKIS",
-      "targetSearchSet": "BLOGS",
+      "whenLabel": "wiki",
+      "targetLabel": "blog",
       "weight": -8
     },
     {
-      "whenSearchSet": "WIKIS",
-      "targetContentType": "blog",
-      "weight": -8
-    },
-    {
-      "whenSearchSet": "FORUMS",
-      "targetSearchSet": "BLOGS",
+      "whenLabel": "forum",
+      "targetLabel": "blog",
       "weight": -6
     },
     {
-      "whenSearchSet": "FORUMS",
-      "targetContentType": "blog",
-      "weight": -6
-    },
-    {
-      "whenSearchSet": "ACADEMIA",
-      "targetSearchSet": "BLOGS",
+      "whenLabel": "academia",
+      "targetLabel": "blog",
       "weight": -4
     }
   ]

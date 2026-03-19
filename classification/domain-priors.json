@@ -1,83 +1,83 @@
 {
-  "searchSetPriors": [
+  "labelPriors": [
     {
       "hostSuffix": "wikipedia.org",
-      "searchSet": "WIKIS",
+      "label": "wiki",
       "weight": 12
     },
     {
       "hostSuffix": "wikipedia.org",
-      "searchSet": "SMALLWEB",
+      "label": "smallweb",
       "weight": -12
     },
     {
       "hostSuffix": "reddit.com",
-      "searchSet": "FORUMS",
+      "label": "forum",
       "weight": 10
     },
     {
       "hostSuffix": "reddit.com",
-      "searchSet": "SMALLWEB",
+      "label": "smallweb",
       "weight": -12
     },
     {
       "hostSuffix": "reddit.com",
-      "searchSet": "ACADEMIA",
+      "label": "academia",
       "weight": -8
     },
     {
       "hostSuffix": "stackexchange.com",
-      "searchSet": "FORUMS",
+      "label": "forum",
       "weight": 8
     },
     {
       "hostSuffix": "stackexchange.com",
-      "searchSet": "SMALLWEB",
+      "label": "smallweb",
       "weight": -10
     },
     {
       "hostSuffix": "stackexchange.com",
-      "searchSet": "ACADEMIA",
+      "label": "academia",
       "weight": -6
     },
     {
       "hostSuffix": "imdb.com",
-      "searchSet": "SMALLWEB",
+      "label": "smallweb",
       "weight": -12
     },
     {
       "hostSuffix": "imdb.com",
-      "searchSet": "ACADEMIA",
+      "label": "academia",
       "weight": -8
     },
     {
       "hostSuffix": "rottentomatoes.com",
-      "searchSet": "SMALLWEB",
+      "label": "smallweb",
       "weight": -12
     },
     {
       "hostSuffix": "rottentomatoes.com",
-      "searchSet": "ACADEMIA",
+      "label": "academia",
       "weight": -8
     },
     {
       "hostSuffix": "myanimelist.net",
-      "searchSet": "SMALLWEB",
+      "label": "smallweb",
       "weight": -14
     },
     {
       "hostSuffix": "myanimelist.net",
-      "searchSet": "ACADEMIA",
+      "label": "academia",
       "weight": -10
     },
     {
       "hostSuffix": "anidb.net",
-      "searchSet": "SMALLWEB",
+      "label": "smallweb",
       "weight": -12
     },
     {
       "hostSuffix": "anidb.net",
-      "searchSet": "ACADEMIA",
+      "label": "academia",
       "weight": -8
     }
   ],

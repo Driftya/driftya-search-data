@@ -63,7 +63,6 @@ The data package supports classification into filterable groups such as:
 
 This lets the search engine expose:
 
-- search sets
 - labels
 - categories
 - topic-driven filters
