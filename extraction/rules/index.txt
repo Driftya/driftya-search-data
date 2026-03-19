@@ -1,3 +1,4 @@
 # Relative paths from extraction/rules/
 anime-rules.yaml
+driftya-rules.yaml
 movie-rules.yaml

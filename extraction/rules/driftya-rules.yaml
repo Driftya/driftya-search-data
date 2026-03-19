@@ -1,0 +1,14 @@
+rules:
+  - id: driftya-note-mood-and-seed-creator
+    hostSuffixes:
+      - driftya.com
+    pathPrefixes:
+      - /notes/
+    fields:
+      - key: mood
+        selector: "section.app-page > article.note-card .note-card__header .pill--accent[data-tooltip]"
+        valueKind: string
+      - key: seed_creator_display_name
+        selector: "section.app-page > article.note-card .note-card__meta > a[href^='/profiles/']"
+        valueKind: string
+        pattern: "Seed by\\s+(?<value>.+)$"
