@@ -20,6 +20,7 @@
       "hostSuffix": "driftya.com",
       "maxPages": 5000,
       "rankingPenalty": 0,
+      "maxProcessedUrlsPerHostPerEnrichmentBatch": 100,
       "minDelayMs": 1000,
       "maxJitterMs": 500,
       "maxConcurrentRequests": 2,
