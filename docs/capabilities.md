@@ -48,6 +48,14 @@ The engine can score pages using:
 
 This makes it possible to surface pages that read like they were made for people, not just for traffic systems.
 
+It also makes it possible to reject low-value externally discovered pages using structural evidence such as:
+
+- shallow word count
+- weak internal depth
+- outbound-link-heavy link hubs
+- weak page-type labels
+- generic user/profile path patterns
+
 ### Search Sets, Labels, And Filters
 
 The data package supports classification into filterable groups such as:
@@ -117,6 +125,12 @@ This lets the engine:
 
 That makes discovery more relevant over time and helps prevent stale external hosts from piling up after the original source page stops linking to them.
 
+### Social And Profile Backstops
+
+The data package can also define hard crawl-policy backstops for major social/profile platforms when generic scoring is not enough.
+
+This lets the engine stop obvious low-value external surfaces before they enter the index at all.
+
 ### Curated Public Policy
 
 Because this logic lives in public data, not only in code, it becomes easier to:
@@ -140,8 +154,10 @@ With this repository, Driftya Search can already support:
 - seed-driven discovery
 - bounded large-site crawl caps
 - reversible link discovery for externally discovered hosts
+- generic low-value external page exclusion using existing crawl/classification signals
 - grace-period cleanup for orphaned discovered hosts
 - retention protection for seeded or explicitly requested hosts
+- major social/profile-host crawl-policy backstops
 - ranking demotion for large platforms
 - path and query restrictions for large or noisy domains
 - host-aware politeness controls with delay, jitter, concurrency limits, robots crawl-delay support, and status-code cooldowns

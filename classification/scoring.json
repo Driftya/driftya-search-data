@@ -9,5 +9,10 @@
   "longFormBoost": 2,
   "thinContentMaximumLength": 120,
   "thinContentPenalty": 2,
-  "personalToneBoost": 1
+  "personalToneBoost": 1,
+  "externalLowValueWordCountMaximum": 220,
+  "externalLowValueOutboundLinkThreshold": 4,
+  "externalLowValueMaxInternalUrls": 1,
+  "externalLowValueMaxScore": 1,
+  "externalLowValueMinimumSignals": 3
 }

@@ -27,6 +27,69 @@
       "honorRobotsCrawlDelay": true
     },
     {
+      "hostSuffix": "bsky.app",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
+      "hostSuffix": "instagram.com",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
+      "hostSuffix": "facebook.com",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
+      "hostSuffix": "threads.net",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
+      "hostSuffix": "x.com",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
+      "hostSuffix": "twitter.com",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
+      "hostSuffix": "linkedin.com",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
+      "hostSuffix": "pinterest.com",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
+      "hostSuffix": "tiktok.com",
+      "rankingPenalty": 40,
+      "blockedPathPrefixes": [
+        "/"
+      ]
+    },
+    {
       "hostSuffix": "wikipedia.org",
       "maxPages": 2000,
       "rankingPenalty": 8,

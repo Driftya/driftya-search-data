@@ -14,6 +14,8 @@ This repository contains curation data used by the crawler and indexing policy:
 
 This data package is the policy layer behind Driftya Search. It shapes discovery, scoring, classification, extraction, retained-site behavior, and bounded crawl behavior.
 
+It also provides the knobs for generic low-value external-page exclusion and hard backstops for major social/profile hosts when discovery would otherwise bring in shallow bio pages, link hubs, or similar weak pages.
+
 See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of what this repository enables in the engine.
 
 ## Layout
