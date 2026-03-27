@@ -104,6 +104,19 @@ The data package can define crawl limits per domain, including:
 
 That gives the search engine a bounded model for large sites and prevents unbounded crawl growth.
 
+### Reversible Discovery And Cleanup
+
+The data package can support discovery that is not permanent just because a link was seen once.
+
+This lets the engine:
+
+- keep manually requested or seeded hosts as retained sites
+- treat link-discovered hosts differently from intentionally retained hosts
+- reconcile current outbound-link evidence instead of only appending old graph state
+- age out orphaned discovered hosts after a grace period
+
+That makes discovery more relevant over time and helps prevent stale external hosts from piling up after the original source page stops linking to them.
+
 ### Curated Public Policy
 
 Because this logic lives in public data, not only in code, it becomes easier to:
@@ -126,6 +139,9 @@ With this repository, Driftya Search can already support:
 - structured extraction
 - seed-driven discovery
 - bounded large-site crawl caps
+- reversible link discovery for externally discovered hosts
+- grace-period cleanup for orphaned discovered hosts
+- retention protection for seeded or explicitly requested hosts
 - ranking demotion for large platforms
 - path and query restrictions for large or noisy domains
 - host-aware politeness controls with delay, jitter, concurrency limits, robots crawl-delay support, and status-code cooldowns
@@ -142,6 +158,7 @@ This package enables a different approach:
 - decide what signals matter
 - encode them in public data
 - keep the crawl bounded
+- let weak or orphaned discoveries fall away
 - make results filterable and understandable
 
 That is the core capability this repository provides.

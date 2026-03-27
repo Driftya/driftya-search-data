@@ -7,11 +7,12 @@ Public data package for Driftya Search.
 This repository contains curation data used by the crawler and indexing policy:
 
 - seed websites to bootstrap discovery
+- retention inputs for intentionally kept hosts
 - domain blocklists
 - spam, tool-directory, and SEO phrase patterns
 - quality scoring signals
 
-This data package is the policy layer behind Driftya Search. It shapes discovery, scoring, classification, extraction, and bounded crawl behavior.
+This data package is the policy layer behind Driftya Search. It shapes discovery, scoring, classification, extraction, retained-site behavior, and bounded crawl behavior.
 
 See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of what this repository enables in the engine.
 
@@ -90,6 +91,7 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
   - canonical route templates let discovery/listing pages be crawled as feeders while excluding non-canonical utility pages from indexing
   - host politeness settings support per-host delay, jitter, max concurrency, robots crawl-delay honoring, and explicit cooldowns for status codes like `403` and `429`
   - The engine uses this together with host rotation so capped domains stay bounded over time
+  - The engine can also distinguish intentionally retained hosts from link-discovered hosts so stale discoveries can be cleaned up without deleting seeded or manually requested sites
 - Classification policy:
   - `classification/domain-priors.json` lets trusted domains strongly bias structural classifications such as `WIKIS` or `FORUMS`
   - `classification/negative-signals.json` lets one strong classification demote weaker competing ones such as `WIKIS -> blog`
