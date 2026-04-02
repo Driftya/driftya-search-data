@@ -99,7 +99,38 @@ See [docs/capabilities.md](./docs/capabilities.md) for a higher-level summary of
   - `classification/negative-signals.json` lets one strong classification demote weaker competing ones such as `WIKIS -> blog`
   - `classification/topic-thresholds.json` prevents topic labels from being emitted on one weak token alone
 
+## Add Seed Sites
+
+Contributions are welcome for small websites, personal blogs, indie projects, niche communities, and other human-made sites that deserve discovery.
+
+If you know a good small site that should help bootstrap search coverage, add it to the seed lists instead of waiting for the crawler to discover it indirectly.
+
+Use the seed folders like this:
+
+- `seed-sites/*.txt`: general seeds that are useful regardless of language or region.
+- `seed-sites/locales/<lang>/*.txt`: locale-specific seeds for sites that mainly serve one language or market.
+- `seed-sites/freshness/*.txt`: timely sources worth revisiting regularly because they publish new content often.
+- `seed-sites/freshness/locales/<lang>/*.txt`: timely sources that are both locale-specific and worth regular refresh.
+
+Freshness and locale solve different problems:
+
+- `freshness` answers "should this source be revisited often because it changes frequently?"
+- `locales/<lang>` answers "is this source primarily relevant to a specific language?"
+
+Examples:
+
+- A Swedish personal blog with evergreen posts belongs in `seed-sites/locales/sv/`.
+- A global news-style blog that updates often belongs in `seed-sites/freshness/`.
+- A Swedish tech news site that publishes frequently belongs in `seed-sites/freshness/locales/sv/`.
+
 ## Contributing
+
+Typical flow for seed contributions:
+
+1. Clone the `driftya-search-data` repository.
+2. Add or update the relevant seed file under `seed-sites/`.
+3. Keep entries lowercase, one per line, and add comments only when they help review.
+4. Open a pull request describing why the site should be seeded.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
